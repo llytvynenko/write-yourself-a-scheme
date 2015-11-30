@@ -17,6 +17,7 @@ library
   hs-source-dirs:      src
   exposed-modules:     Lib
   build-depends:       base >=4.7 && < 5
+                     , parsec    >=3.1
   default-language:    Haskell2010
 
 executable write-yourself-a-scheme-exe
@@ -25,6 +26,7 @@ executable write-yourself-a-scheme-exe
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base >=4.7 && <5
                      , write-yourself-a-scheme
+                     , parsec    >=3.1
   default-language:    Haskell2010
 
 test-suite write-yourself-a-scheme-test
@@ -34,6 +36,7 @@ test-suite write-yourself-a-scheme-test
   build-depends:       base     >=4.7 && <5
                      , write-yourself-a-scheme -any
                      , hspec    ==2.*
+                     , parsec    >=3.1
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
   default-language:    Haskell2010
 
@@ -43,6 +46,7 @@ test-suite style
   main-is:             HLint.hs
   build-depends:       base  >=4.7 && <5
                      , hlint ==1.*
+                     , parsec    >=3.1
   default-language:    Haskell2010
   ghc-options:         -Wall
 
