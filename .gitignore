@@ -1,3 +1,5 @@
 *.hi
 *.exe
 *.o
+dist
+.stack-work
